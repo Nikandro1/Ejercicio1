@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body id="body" class="body">
+    <div id="formu" class="formulario">
+        <form action="" method="get" onsubmit="return validar()">
+            <h1>Formulario de datos personales</h1>
+            <label for="nombre">NOMBRE:</label>
+            <br>
+            <input type="text" id="nombre" placeholder="Escriba su nombre">
+            <br>
+            <label for="apellido">APELLIDO:</label>
+            <br>
+            <input type="text" id="apellido" placeholder="Escriba su apellido">
+            <br>
+            <label for="mail">EMAIL:</label>
+            <br>
+            <input type="email" id="mail" placeholder="Escriba su email">
+            <br>
+            <label for="fecha">FECHA DE NACIMIENTO:</label>
+            <br>
+            <input type="date" id="fecha" placeholder="Escriba su fecha de nacimiento">
+            <br>
+            <label for="pais">PAIS DE RESIDENCIA:</label>
+            <br>
+            <select name="paises" id="pais">
+                <option value="">Seleccione su país</option>
+                <option value="argentina">Argentina</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="brasil">Brasil</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="colombia">Colombia</option>
+                <option value="peru">Perú</option>
+                <option value="paraguay">Paraguay</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="chile">Chile</option>
+                <option value="otro">Otro</option>
+            </select>   
+            <br><br>
+            <button type="submit", class="botonFormu">Enviar</button>
+        </form>
+        <button id="boton">Cambiar tema</button>
+    </div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="/Ejercicio 1/Ejercicio1.js"></script>
+</body>
+
+</html>

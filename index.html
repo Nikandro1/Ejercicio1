@@ -14,19 +14,23 @@
             <h1>Formulario de datos personales</h1>
             <label for="nombre">NOMBRE:</label>
             <br>
-            <input type="text" id="nombre" placeholder="Escriba su nombre">
+            <input type="text" id="nombre" aria-required="true" aria-describedby="nombre-ayuda" placeholder="Escriba su nombre">
+            <span id="nombre-ayuda">Este campo es obligatorio</span>
             <br>
             <label for="apellido">APELLIDO:</label>
             <br>
-            <input type="text" id="apellido" placeholder="Escriba su apellido">
+            <input type="text" id="apellido" aria-required="true" aria-describedby="apellido-ayuda" placeholder="Escriba su apellido">
+            <span id="apellido-ayuda">Este campo es obligatorio</span>
             <br>
             <label for="mail">EMAIL:</label>
             <br>
-            <input type="email" id="mail" placeholder="Escriba su email">
+            <input type="email" id="mail" aria-required="true" aria-describedby="mail-ayuda" placeholder="Escriba su email">
+            <span id="mail-ayuda">Este campo es obligatorio</span>
             <br>
             <label for="fecha">FECHA DE NACIMIENTO:</label>
             <br>
-            <input type="date" id="fecha" placeholder="Escriba su fecha de nacimiento">
+            <input type="date" id="fecha" aria-required="true" aria-describedby="fecha-ayuda" placeholder="Escriba su fecha de nacimiento">
+            <span id="fecha-ayuda">Este campo es obligatorio</span>
             <br>
             <label for="pais">PAIS DE RESIDENCIA:</label>
             <br>
@@ -44,9 +48,10 @@
                 <option value="otro">Otro</option>
             </select>   
             <br><br>
-            <button type="submit", class="botonFormu">Enviar</button>
+            <button type="submit", class="botonFormu" aria-label="enviar">Enviar</button>
+            <div aria-live="assertive" id="error-mensaje" style="color: red;"></div>
         </form>
-        <button id="boton">Cambiar tema</button>
+        <button id="boton" aria-label="cambiar tema">Cambiar tema</button>
     </div>
     <script src="jquery-3.7.1.min.js"></script>
     <script src="/Ejercicio 1/Ejercicio1.js"></script>
